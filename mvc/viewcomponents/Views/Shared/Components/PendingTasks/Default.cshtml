@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Models.PendingTasks>
+
+<ul>
+	@foreach (var task in Model)
+	{
+		<li><strong>@task.Id</strong></li>
+		<li><strong>@task.Name</strong></li>
+		<li><strong>@task.Completed</strong></li>
+
+	}
+</ul>
